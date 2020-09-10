@@ -1,4 +1,4 @@
-
+@NativeClass()
 declare class BEMAnimationManager extends NSObject {
 
 	static alloc(): BEMAnimationManager; // inherited from NSObject
@@ -42,6 +42,7 @@ declare const enum BEMBoxType {
 	Square = 1
 }
 
+@NativeClass()
 declare class BEMCheckBox extends UIControl implements CAAnimationDelegate {
 
 	static alloc(): BEMCheckBox; // inherited from NSObject
@@ -144,6 +145,7 @@ declare var BEMCheckBoxDelegate: {
 	prototype: BEMCheckBoxDelegate;
 };
 
+@NativeClass()
 declare class BEMCheckBoxGroup extends NSObject {
 
 	static alloc(): BEMCheckBoxGroup; // inherited from NSObject
@@ -167,6 +169,7 @@ declare var BEMCheckBoxVersionNumber: number;
 
 declare var BEMCheckBoxVersionString: interop.Reference<number>;
 
+@NativeClass()
 declare class BEMPathManager extends NSObject {
 
 	static alloc(): BEMPathManager; // inherited from NSObject

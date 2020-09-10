@@ -1,10 +1,4 @@
-import { Color, Button } from '@nativescript/core';
-import { booleanConverter } from '@nativescript/core/ui/core/view-base';
-import {
-  CssProperty,
-  Property,
-  Style,
-} from '@nativescript/core/ui/core/properties';
+import { Color, Button, CssProperty, Property, Style, booleanConverter } from '@nativescript/core';
 import { BoxType } from './checkbox-common';
 import { CheckBoxInterface } from './index';
 
@@ -283,6 +277,7 @@ export class CheckBox extends Button implements CheckBoxInterface {
   }
 }
 
+@NativeClass()
 class BEMCheckBoxDelegateImpl extends NSObject implements BEMCheckBoxDelegate {
   public static ObjCProtocols = [BEMCheckBoxDelegate];
   /*public static ObjCExposedMethods = {

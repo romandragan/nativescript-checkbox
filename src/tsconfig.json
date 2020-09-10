@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
+    "target": "ES2017",
+    "module": "esnext",
     "moduleResolution": "node",
     "removeComments": true,
     "declaration": false,
@@ -22,7 +22,11 @@
       "dom",
       "es6"
     ],
-    "baseUrl": "."
+    "baseUrl": ".",
+    "plugins": [{
+      "transform": "@nativescript/webpack/transformers/ns-transform-native-classes",
+      "type": "raw"
+    }]
   },
   "exclude": ["node_modules", "platforms", "typings/BEMCheckBox.d.ts"],
   "compileOnSave": false
